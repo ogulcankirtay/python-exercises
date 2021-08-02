@@ -1,11 +1,16 @@
-# tuple ın normal bir listten farkı tuple ın herhangi bir elemanını değiştiremeyiz ama tamamını değiştirebiliriz ama listin istediğimiz elemanını değiştirebilirz....
-# list=[1,2,3]
-# tuple=(1,'iki',3)
-# print(type(list))
-# print(type(tuple))
-# print(list[2])
-# print(tuple[2])
-list=["ali","ayşe"]
-tuple=("damla","ayşe")
-names=("damla","ayşe","emel")+tuple
-print(names)
+#tuple
+from builtins import tuple
+
+a=()
+b=tuple()
+print("type a",type(a),"type b",type(b))
+a=(1,2,4,5,6,7)
+print(a)
+print(a[1])
+#a[1]=1 ->tuple da değer ataması yapılmaz
+yazi="selam nası gidiyo  "
+yeniyazi=tuple(yazi)
+print(yeniyazi)
+print(yeniyazi.index("l"))
+print(yeniyazi.count(" "))
+print(yeniyazi.__contains__("x")) # x elemeanını bulundurmuyor
